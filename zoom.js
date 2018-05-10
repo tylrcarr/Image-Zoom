@@ -19,6 +19,7 @@
 			zoom: 5,
 			width: 250,
 			height: 250,
+			canvasId: "",
 			autoCorrect: true
 		}, options );
 		// define the image and create the canvas
@@ -30,8 +31,7 @@
 		}
 		const cImg = document.createElement("canvas");
 		// ensure the height is fixed. 
-		// TODO: add a method to add all of the css they want copied over to the new canvas
-		cImg.id = `can-${$(this).attr("id")}`;
+		cImg.id = canvasId;
 		cImg.height = img.height;
 		cImg.width = img.width;
 		$(cImg).height($(img).height());

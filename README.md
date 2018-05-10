@@ -14,6 +14,11 @@ Your options are as follows:
 
 ### Zoom
 
+DEFAULT: 5
+
+```javascript
+$(/* your identifier here */).zoom({zoom: 2});
+```
 Zoom is just the level of zoom on the image.
 
 It's calculated by dividing the width by the zoom level. 
@@ -22,11 +27,21 @@ So, if my width were the size of my image, and the zoom were 2, you'd see a litt
 
 ### Width & Height
 
+DEFAULT: 250
+
+```javascript
+$(/* your identifier here */).zoom({width: 500, height: 400});
+```
+
 These 2 variables are pretty self explanatory. It's the width and height in PX of the zoom reticle
 
 If the height or width is bigger than the image, it's resized to size of the image. If this is an issue to you for some reason, you can change the...
 
-### Auto-correct Height / Width
+### Auto-correct Height / Width 
+
+DEFAULT: True
+
+$(/* your identifier here */).zoom({width: 500, height: 400, autoCorrect: false});
 
 This changes the aformentioned issue. I can't forsee a reason for it, but Facebook was written in PHP and they didn't see a reason why not to until it was far too late.
 

@@ -31,7 +31,7 @@
 		}
 		const cImg = document.createElement("canvas");
 		// ensure the height is fixed. 
-		cImg.id = canvasId;
+		cImg.id = settings.canvasId;
 		cImg.height = img.height;
 		cImg.width = img.width;
 		$(cImg).height($(img).height());

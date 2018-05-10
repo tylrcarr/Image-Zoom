@@ -50,8 +50,9 @@
 			const x = e.offsetX;
 			const y = e.offsetY;
 			// so this is essentially the size of the image that goes inside of the zoom reticle
-			const imgX = x - (width/settings.zoom)/2;
-			const imgY = y - (height/settings.zoom)/2;
+			// the math inside of the first part is to scale the canvas width to that of the image
+			const imgX = (e.offsetX / cImg.width) * img.width - (width/settings.zoom)/2;
+			const imgY = ((e.offsetY / cImg.height) * img.height) - (height/settings.zoom)/2;
 			/*
 			 * this is kinda complicated, so I'm going to bring out the multiline
 			 * first, it checks to see if the reticle will be inside the right side of

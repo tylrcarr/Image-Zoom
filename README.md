@@ -41,7 +41,9 @@ If the height or width is bigger than the image, it's resized to size of the ima
 
 DEFAULT: True
 
+```javascript
 $(/* your identifier here */).zoom({width: 500, height: 400, autoCorrect: false});
+```
 
 This changes the aformentioned issue. I can't forsee a reason for it, but Facebook was written in PHP and they didn't see a reason why not to until it was far too late.
 

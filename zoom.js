@@ -95,8 +95,8 @@
 		 */
 
 		cImg.addEventListener("touchmove", function (e) {
-			var touch = e.touches[0];
-			var mouseEvent = new MouseEvent("mousemove", {
+			let touch = e.touches[0];
+			let mouseEvent = new MouseEvent("mousemove", {
 				clientX: touch.clientX,
 				clientY: touch.clientY
 			});
